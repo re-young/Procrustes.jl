@@ -8,6 +8,18 @@ type Coords
 end
 
 #main function
+"""
+Implements a [generalized procrustes analysis](https://en.wikipedia.org/wiki/Procrustes_analysis#Generalized_Procrustes_analysis_.28GPA.29).
+
+
+# Arguments
+'data::Array': A 3D array with landmarks on the first dimension
+                x,y,z values on the 2nd dimension
+                samples on the 3rd dimension
+
+'scale::Bool': Scale samples to unit size
+'tol::Float': Tolerance for convergence of the iterative alignment
+"""
 function procAlign(data::Array,scale=true,tol=10e-5)
     
     centSize=centriodSize(data)
