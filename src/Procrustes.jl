@@ -1,6 +1,6 @@
 module Procrustes
 
-export Coords, procAlign, centroidSize
+export Coords, procAlign, centriodSize
 
 #define the fundimental type
 type Coords
@@ -20,6 +20,7 @@ Implements a [generalized procrustes analysis](https://en.wikipedia.org/wiki/Pro
                 samples on the 3rd dimension
 
 'scale::Bool': Scale samples to unit size
+
 'tol::Float': Tolerance for convergence of the iterative alignment
 """
 function procAlign(data::Array,scale=true,tol=10e-5)
