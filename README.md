@@ -1,6 +1,6 @@
 # Procrustes
 
-This package implements [generalized procrustes analysis](https://en.wikipedia.org/wiki/Procrustes_analysis#Generalized_Procrustes_analysis_.28GPA.29) for statistical shape analysis.  The input  data format is a 3D array with dimensions landmark,(x,y,z),sample.
+This package implements [generalized procrustes analysis](https://en.wikipedia.org/wiki/Procrustes_analysis#Generalized_Procrustes_analysis_.28GPA.29) for statistical shape analysis.  The input  data format is a 3D array with dimensions landmark,(x,y,z),samples.
 
 # TODO
 
