@@ -1,6 +1,6 @@
 module Procrustes
 
-export Coords, procAlign, centriodSize
+export Coords, procAlign
 
 #define the fundimental type
 type Coords
