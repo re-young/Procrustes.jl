@@ -1,5 +1,7 @@
 module Procrustes
 
+export Coords, procAlign, centroidSize
+
 #define the fundimental type
 type Coords
     rawCoords::Array
@@ -97,7 +99,14 @@ function procDist(x::Array, y::Array)
     return(sqrt(sum((x-y).^2)))
 end
 
+"""
+Calculates the centroid size of landmark configurations. 
 
+# Arguments
+'data::Array': A 3D array with landmarks on the first dimension
+                x,y,z values on the 2nd dimension
+                samples on the 3rd dimension
+"""
 function centriodSize(x::Array)
     
     centSize=zeros(size(x)[3])
